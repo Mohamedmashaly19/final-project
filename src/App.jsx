@@ -10,13 +10,12 @@ import Product from "./component/Product/Product";
 import Wish from "./component/Wish/Wish";
 import { Toaster } from 'react-hot-toast';
 
-
 import NotFound from './pages/NotFound/NotFound';
 import UserContextProvider from "./context/userContext";
 import ProudectRoute from "./component/ProudectRoute/ProudectRoute";
 import ProudectDetails from "./component/ProudectDetails/ProudectDetails";
-import CardContextProvider from "./context/CardContext";
 import CheckOut from "./component/CheckOut/CheckOut";
+import CardContextProvider from "./context/cardContext";
 
 
 

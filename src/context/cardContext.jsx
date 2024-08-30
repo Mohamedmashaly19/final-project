@@ -1,11 +1,6 @@
 import axios from 'axios';
-import React from 'react'
-import { createContext } from 'react';
-
-
-
-
-export const CardContext = createContext();
+import React from 'react';
+export const CardContext = React.createContext();
 
 export default function CardContextProvider(props) {
 
@@ -45,16 +40,17 @@ export default function CardContextProvider(props) {
     function getLoggedCard() {
 
         return axios.get("https://ecommerce.routemisr.com/api/v1/cart",
-            {                 headers: { token: localStorage.getItem("userToken") }
-        })
+            {
+                headers: { token: localStorage.getItem("userToken") }
+            })
             .then(response => { return response?.data?.data?.products })
             .catch(error => { console.log(error); })
-  }
+    }
 
 
     return (
         <CardContext.Provider value={{ getLoggedCard, addToCard, removeProduct }}>
-            {props.children}
+            {props?.children}
         </CardContext.Provider>
     )
 
