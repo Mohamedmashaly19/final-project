@@ -1,8 +1,8 @@
 import { useContext, useState } from 'react'
-import { CardContext } from './../../context/cardContext';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import toast from 'react-hot-toast';
+import { CardContext } from '../../context/cardContext';
 
 export default function ProdctItem({ prdt }) {
   const { addToCard } = useContext(CardContext);

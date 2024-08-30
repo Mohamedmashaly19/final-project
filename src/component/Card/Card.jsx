@@ -1,8 +1,6 @@
-// import React, {  useEffect, useState } from 'react'
 import axios from 'axios';
-import { useContext, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Loder from '../Loder/Loder';
-import { CardContext } from '../../context/CardContext';
 import { Link } from 'react-router-dom';
 
 
